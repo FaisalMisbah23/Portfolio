@@ -66,7 +66,7 @@ tl.call(typeWriter)
 var i = 0;
 var h1Txt = 'Faisal Misbah';
 var pTxt = `I'm a Frontend Developer`;
-var speed = 120;
+var speed = 100;
 
 function typeWriter() {
   if (i < h1Txt.length) {
@@ -83,7 +83,7 @@ function typeWriter() {
 }
 
 gsap.from(".home",{
-  opcaity:0,
+  // opcaity:0,
   scale:0,
  
 scrollTrigger:{
@@ -93,8 +93,11 @@ scrollTrigger:{
     scrub:true,
 }
 })
+
+
+
 gsap.from(".portfolio",{
-  opcaity:0,
+  // opcaity:0,
   scale:0.7,
 
 scrollTrigger:{
@@ -233,3 +236,5 @@ page1Content.addEventListener('mouseleave',function(){
 })
 }
 cursorEffect();
+
+
