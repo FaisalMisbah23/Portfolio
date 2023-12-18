@@ -18,10 +18,12 @@
   --dark-bg: #222222;
   --light-bg: #333333;
   /* --yellow: #bac964; */
-  --yellow: #2AB7CA;
+  --yellow: #01A2AC;
   /* --cyan: #01A2AC; */
+  /* --red:#FF4A57; */
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
+
 
 
 html {
