@@ -48,10 +48,10 @@
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
-    .sidenav1 {padding-top: 50px;}
+    .sidenav1 {margin-top: 50px;}
     .sidenav1 a {font-size: 18px;}
   }
   @media screen and (max-height: 400px) {
-    .sidenav{
-      margin-top: 50px;
-    }}
+    #mySidenav1{
+        margin-top: 50px;
+      }}
