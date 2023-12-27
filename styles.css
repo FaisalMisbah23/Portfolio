@@ -1,5 +1,5 @@
 * {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,13 +18,11 @@
   --dark-bg: #222222;
   --light-bg: #333333;
   /* --yellow: #bac964; */
-  --yellow: #01A2AC;
+  --yellow: #01a2ac;
   /* --cyan: #01A2AC; */
   /* --red:#FF4A57; */
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
-
-
 
 html {
   font-size: 62.5%;
@@ -61,14 +59,13 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-
 }
 #cursor h5 {
   font-size: 1vw;
   font-weight: 500;
 }
 
-#loader{
+#loader {
   height: 100vh;
   width: 100%;
   background-color: var(--dark-bg);
@@ -78,13 +75,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-#loader h1{
+#loader h1 {
   font-size: 100px;
-  font-family:'Segoe UI';
+  font-family: "Segoe UI";
   font-weight: 500;
   color: var(--yellow);
 }
-
 
 section {
   padding: 5rem 9%;
@@ -114,36 +110,32 @@ section {
   margin-top: 1rem;
 }
 
-
-.header a
-{
+.header a {
   color: white;
   position: relative;
   padding: 2px 0;
 }
-.header a:hover{
-    color: var(--yellow);
+.header a:hover {
+  color: var(--yellow);
 }
-.header a:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: white;
-    transition: .4s;
-    bottom: 0;
+.header a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: 0.4s;
+  bottom: 0;
 }
-.header a:hover:after{
-    width: 100%;
-    
+.header a:hover:after {
+  width: 100%;
 }
-
 
 /* home */
 .home {
   height: 100vh;
- /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-image.jpeg');*/
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-image.jpeg');*/
   /* filter: grayscale(100%); */
   background-size: cover;
   background-position: center;
@@ -158,14 +150,13 @@ section {
   z-index: 9;
 }
 
-.home2{
+.home2 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   position: relative;
-
 }
 
 .home .hero-text {
@@ -173,13 +164,10 @@ section {
   color: var(--white);
   font-weight: 200;
   line-height: 1.2;
-
 }
-
 
 .home .hero-text span {
   font-weight: 800;
- 
 }
 
 .home p {
@@ -244,14 +232,13 @@ section {
 
 /* portfolio */
 .portfolio .box-container {
-display: flex;
-justify-content: center;
-justify-content: center;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-
-.portfolio .box-container .box .image{
+.portfolio .box-container .box .image {
   height: 30rem;
   overflow: hidden;
   position: relative;
@@ -278,14 +265,14 @@ flex-wrap: wrap;
 
 .portfolio .box-container .box:hover .image img {
   -webkit-transition: all 300ms ease-in-out;
-		-o-transition: all 300ms ease-in-out;
-		transition: all 300ms ease-in-out;
-		-webkit-filter: blur(1px);
-		-moz-filter: blur(1px);
-		-ms-filter: blur(1px);
-		-o-filter: blur(1px);
-		filter: blur(1px);
-		transform: scale(1.2);
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -ms-filter: blur(1px);
+  -o-filter: blur(1px);
+  filter: blur(1px);
+  transform: scale(1.2);
 }
 
 .portfolio .box-container .box .image .content {
@@ -314,29 +301,28 @@ flex-wrap: wrap;
 /* portfolio */
 
 .portfolio .box-container .box .image .text {
-
   position: absolute;
   top: -100px;
   /* color: #01A2AC; */
   color: black;
 }
 
-.portfolio .box-container .box .image .text h3{
+.portfolio .box-container .box .image .text h3 {
   color: black;
 }
 
-.image:hover .text{
- top: 20%;
+.image:hover .text {
+  top: 20%;
 }
 
-.image:hover .button{
+.image:hover .button {
   bottom: 30%;
 }
-.image:hover .button2{
+.image:hover .button2 {
   bottom: 60%;
 }
 
-.image .button{
+.image .button {
   position: absolute;
   bottom: -100px;
   left: 25%;
@@ -348,7 +334,7 @@ flex-wrap: wrap;
   font-size: 2rem;
   font-weight: bold;
 }
-.image .button2{
+.image .button2 {
   position: absolute;
   bottom: -100px;
   left: 25%;
@@ -360,12 +346,12 @@ flex-wrap: wrap;
   font-size: 2rem;
   font-weight: bold;
 }
-.image .button:hover,.button2:hover{
+.image .button:hover,
+.button2:hover {
   background-color: var(--yellow);
-  color: #F5F5F5;
+  color: #f5f5f5;
   cursor: pointer;
 }
-
 
 /* resume */
 .resume .col-container .col .box {
@@ -534,13 +520,13 @@ flex-wrap: wrap;
   letter-spacing: 0.1rem;
 }
 
-.contact .col-container .col span{
+.contact .col-container .col span {
   font-size: 1.5rem;
   color: var(--dark-gray);
   letter-spacing: 0.1rem;
 }
 
-.contact .col-container .col span a{
+.contact .col-container .col span a {
   font-size: 1.5rem;
   color: var(--dark-gray);
   letter-spacing: 0.1rem;
@@ -569,7 +555,6 @@ flex-wrap: wrap;
   margin-top: 3rem;
 }
 /* footer */
-
 
 /* media queries */
 @media (max-width: 1200px) {
@@ -624,6 +609,7 @@ flex-wrap: wrap;
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+    margin-top: 5;
   }
 
   .home .hero-text {
@@ -632,94 +618,92 @@ flex-wrap: wrap;
 }
 /* media queries */
 
-
-
 /* skills section */
 .skills {
-padding: 5rem 0;
-text-align: center;
+  padding: 5rem 0;
+  text-align: center;
 }
 
 .heading {
-font-size: 3rem;
-font-weight: 700;
-color: white;
-margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 2rem;
 }
 
 .heading span {
-color: #f44336;
+  color: #f44336;
 }
 
 .skills-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill {
-width: 300px;
-margin: 1rem;
-margin-bottom: 2rem;
-text-align: center;
-padding: 2rem;
-border-radius: 5px;
-box-shadow: 0 0 10px var(--yellow);
-transition: transform 0.3s ease;
+  width: 300px;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--yellow);
+  transition: transform 0.3s ease;
 }
 
 .skill:hover {
-transform: translateY(-10px);
-background-color: var(--yellow);
+  transform: translateY(-10px);
+  background-color: var(--yellow);
 }
 
 .skill .skill-name {
-font-size: 2rem;
-font-weight: 700;
-color: white;
-margin-bottom: 1rem;
-display: flex;
-justify-content: center;
-align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.skill .skill-name svg{
+.skill .skill-name svg {
   margin-left: 0.5rem;
 }
 
 .skill-percentage {
-font-size: 1.5rem;
-color: #777;
+  font-size: 1.5rem;
+  color: #777;
 }
 
 .skill i {
-font-size: 3rem;
-color: #f44336;
-margin-bottom: 1rem;
+  font-size: 3rem;
+  color: #f44336;
+  margin-bottom: 1rem;
 }
 
 /* media queries */
 @media screen and (max-width: 768px) {
-.skill {
-width: 100%;
-}
-#contact2 .container2 {
-  height: 70vh;
-}
+  .skill {
+    width: 100%;
+  }
+  #contact2 .container2 {
+    height: 70vh;
+  }
 }
 @media screen and (max-width: 400px) {
   #cursor {
     height: 5rem;
     width: 5rem;
-  }  
+  }
   #cursor h5 {
     font-size: 1rem;
     font-weight: 500;
   }
-  .home{
+  .home {
     flex-direction: column;
   }
-  #home > div:nth-child(1) > img{
+  #home > div:nth-child(1) > img {
     width: 300px;
     height: 300px;
     margin-top: 1rem;
@@ -733,10 +717,7 @@ width: 100%;
   .contact_way svg {
     font-size: 0.5rem;
   }
-
-  }
-
-
+}
 
 /*
 .skills {
@@ -770,9 +751,7 @@ width: 100%;
 }
 */
 
-
-
-.vhcf-section{
+.vhcf-section {
   margin-left: 11rem;
   margin-right: 11rem;
 }
@@ -786,25 +765,25 @@ width: 100%;
   display: flex;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items:start;
+  align-items: start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   color: white;
   font-size: 2rem;
   margin-bottom: 5rem;
 }
-.vhcf-section .vhcf-row .vhcf-column .vhcf-module{
+.vhcf-section .vhcf-row .vhcf-column .vhcf-module {
   width: 50%;
   padding: 15px;
   box-sizing: border-box;
   text-align: justify;
 }
-.vhcf-section .vhcf-row .vhcf-column .vhcf-module img{
+.vhcf-section .vhcf-row .vhcf-column .vhcf-module img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -812,7 +791,7 @@ width: 100%;
 
 /* Extra for box */
 
-.vhcf-section .vhcf-row .vhcf-column .vhcf-module .box .image{
+.vhcf-section .vhcf-row .vhcf-column .vhcf-module .box .image {
   height: 30rem;
   overflow: hidden;
   position: relative;
@@ -825,7 +804,7 @@ width: 100%;
   object-fit: cover;
 }
 
-.vhcf-section .vhcf-row .vhcf-column .vhcf-module  .box {
+.vhcf-section .vhcf-row .vhcf-column .vhcf-module .box {
   background-color: var(--light-bg);
   padding: 1rem;
   box-shadow: var(--box-shadow);
@@ -833,14 +812,14 @@ width: 100%;
 
 .vhcf-section .vhcf-row .vhcf-column .vhcf-module.box:hover .image img {
   -webkit-transition: all 300ms ease-in-out;
-		-o-transition: all 300ms ease-in-out;
-		transition: all 300ms ease-in-out;
-		-webkit-filter: blur(1px);
-		-moz-filter: blur(1px);
-		-ms-filter: blur(1px);
-		-o-filter: blur(1px);
-		filter: blur(1px);
-		transform: scale(1.2);
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -ms-filter: blur(1px);
+  -o-filter: blur(1px);
+  filter: blur(1px);
+  transform: scale(1.2);
 }
 
 .vhcf-section .vhcf-row .vhcf-column .vhcf-module .box .image .content {
@@ -901,7 +880,7 @@ width: 100%;
 
 .contact_way svg {
   font-size: 3rem;
-  color: white
+  color: white;
 }
 .contact_way h3 {
   font-size: 3rem;
@@ -917,17 +896,12 @@ width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
 
-
-
-
-
-
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 1000; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #111; /* Black*/
@@ -960,28 +934,32 @@ width: 100%;
   margin-left: 50px;
 }
 
-.sidenav h1{
+.sidenav h1 {
   margin: 0;
   padding: 0;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {margin-top: 50px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 #showcase-container {
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
   padding: 3%;
-  
 }
 #showcase-image {
   max-width: 100%;
@@ -998,36 +976,35 @@ width: 100%;
   color: white;
 }
 @media screen and (max-width: 400px) {
-  #mysidenav{
+  #mysidenav {
     margin-top: 50px;
   }
   #showcase-image {
-  max-width: 100%;
-  max-height: 300px;
-}  
-#showcase-container {
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
-}
-#showcase-text {
-  margin-top: 2rem;
-}
+    max-width: 100%;
+    max-height: 300px;
+  }
+  #showcase-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  #showcase-text {
+    margin-top: 2rem;
+  }
 }
 @media screen and (max-width: 700px) {
   #showcase-image {
-  max-width: 100%;
-  max-height: 300px;
-}  
+    max-width: 100%;
+    max-height: 300px;
+  }
 }
 
-
-.sidenav-btn{
+.sidenav-btn {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.sidenav-btn a{
+.sidenav-btn a {
   background-color: var(--yellow);
   font-size: 1.7rem;
   padding: 1rem 2rem;
@@ -1041,6 +1018,14 @@ width: 100%;
   justify-content: center;
   align-items: center;
 }
-.sidenav-btn a svg{
+.sidenav-btn a svg {
   margin-left: 0.3rem;
 }
+
+@media screen and (max-width: 400px){
+  .margin-top{
+    margin-top: 50px;
+  }
+}
+
+
