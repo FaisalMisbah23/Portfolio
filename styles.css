@@ -253,7 +253,7 @@ section {
 
 .portfolio .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   gap: 4rem;
 }
 
@@ -316,10 +316,10 @@ section {
 }
 
 .image:hover .button {
-  bottom: 30%;
+  bottom: 50%;
 }
 .image:hover .button2 {
-  bottom: 60%;
+  bottom: 50%;
 }
 
 .image .button {
@@ -897,36 +897,35 @@ section {
 }
 
 /* The side navigation menu */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Stay on top */
-  top: 0; /* Stay at the top */
+.sidenav , .sidenav1  , .sidenav2  , .sidenav3 , .sidenav4 , .sidenav5 , .sidenav6 , .sidenav7 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
   left: 0;
-  background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
-/* The navigation menu links */
-.sidenav a {
+.sidenav a ,  .sidenav1 a , .sidenav2 a , .sidenav3 a , .sidenav4  a  , .sidenav5 a , .sidenav6 a  , .sidenav7 a  {
   padding: 8px 8px 8px 32px;
-  text-decoration: none;
+  /* text-decoration: none; */
   font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav a:hover  , .sidenav1 a:hover  , .sidenav2 a:hover , .sidenav3 a:hover  , .sidenav4  a:hover  , .sidenav5 a:hover 
+, .sidenav6 a:hover   , .sidenav7 a:hover{
   color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.sidenav .closebtn  , .sidenav1 .closebtn , .sidenav2 .closebtn , .sidenav3 .closebtn , .sidenav4  .closebtn  ,
+ .sidenav5 .closebtn , .sidenav6 .closebtn   , .sidenav7 .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -934,47 +933,113 @@ section {
   margin-left: 50px;
 }
 
-.sidenav h1 {
-  margin: 0;
+.sidenav h1  , .sidenav1 h1 , .sidenav2 .h1 , .sidenav3 .h1  , .sidenav4  h1  , .sidenav5 h1   , .sidenav6 h1   , .sidenav7 h1{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 0;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left 0.5s;
   padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 50px;
-    margin-top: 50px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
 #showcase-container {
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
   padding: 3%;
+  height: 500px; /* Set a fixed height for the container */
+  overflow: auto; /* Enable overflow to allow scrolling */
 }
-#showcase-image {
-  max-width: 100%;
-  max-height: 500px;
+
+/* Hide the scrollbar */
+#showcase-container::-webkit-scrollbar {
+  display: none;
 }
 
 #showcase-text {
+  flex: 1;
   margin-left: 20px;
   text-align: left;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
+
+#showcase-image {
+  flex: 1;
+  max-width: 50%;
+  max-height: fit-content; /* Allow the image to have its original height */
+}
+
+
 
 #showcase-text p {
   font-size: 18px;
   color: white;
+
 }
+
+.project-text{
+-ms-transform-origin-x: 2rem;
+display: flex;
+align-items: center;
+margin-left: 180px;
+margin-bottom: 40px;
+}
+
+.project-text svg{
+  height: 80px;
+  width: 80px;
+  margin: 0.5rem;
+}
+
+.project-text svg:hover{
+  transform: scale(1.2);
+}
+
+
+.sidenav-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sidenav-btn a {
+  background-color: var(--yellow);
+  font-size: 1.7rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-right: 1rem;
+  display: inline-block;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidenav-btn a svg {
+  margin-left: 0.3rem;
+}
+
+.sidenav-btn a:hover{
+  transform: scale(1.1);
+}
+
+/* Media Queries */
+@media screen and (max-height: 450px) {
+  .sidenav , .sidenav1 , .sidenav2  , .sidenav3 , .sidenav4  , .sidenav5 , .sidenav6   , .sidenav7 {
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+  .sidenav a  , .sidenav1 a , .sidenav2 a , .sidenav3 a , .sidenav4 a   , .sidenav5 a   , .sidenav6 a    , .sidenav7 a{
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   #mysidenav {
     margin-top: 50px;
@@ -992,6 +1057,7 @@ section {
     margin-top: 2rem;
   }
 }
+
 @media screen and (max-width: 700px) {
   #showcase-image {
     max-width: 100%;
@@ -999,33 +1065,21 @@ section {
   }
 }
 
-.sidenav-btn {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.sidenav-btn a {
-  background-color: var(--yellow);
-  font-size: 1.7rem;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  color: var(--white);
-  text-transform: uppercase;
-  margin-right: 1rem;
-  display: inline-block;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sidenav-btn a svg {
-  margin-left: 0.3rem;
-}
-
-@media screen and (max-width: 400px){
-  .margin-top{
+@media screen and (max-width: 400px) {
+  .margin-top {
     margin-top: 50px;
   }
+  .project-text{
+    margin-left: 165px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .project-text svg{
+      height: 50px;
+      width: 50px;
+      flex: 0 0 28%;
+    }
+    .portfolio .box-container {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
 }
-
-
